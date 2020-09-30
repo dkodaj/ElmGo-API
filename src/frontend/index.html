@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElmGo API</title>
+    <link rel="stylesheet" type="text/css" href="/asset/bulma-0.8.0.min.css">
+
+    <style>
+        .Container {
+            margin-top:150px;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            flex-direction:column;
+            align-items:center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="elm"></div>
+
+    <script src="/asset/Main.js"></script>
+    <script>
+        var app = Elm.Main.init({
+            node: document.getElementById('elm')
+        });        
+    </script>
+    
+</body>
+</html>
